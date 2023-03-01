@@ -1,0 +1,67 @@
+body {
+  background-color: #F5D6C1; /* light brown color */
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* other styles for the header */
+}
+
+#header img {
+  width: 150px; /* adjust as needed */
+  height: 150px; /* adjust as needed */
+  /* other styles for the logo */
+}
+
+#header h1 {
+  /* styles for the centered text */
+  text-align: center;
+  font-size: 2em;
+  color: #000000;
+  text-shadow: 2px 2px #ffffff;
+  font-family: arial;
+}
+
+#main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* other styles for the main content */
+}
+
+#main-content button {
+  /* styles for the buttons */
+  font-size: 1.2em;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#main-content button:hover {
+  background-color: #996600; /* Change background color on hover */
+}
+
+
+#footer {
+  /* styles for the footer */
+  text-align: left;
+  padding: 10px;
+}
+
+#footer #log-out {
+  /* styles for the log out button */
+  font-size: 1em;
+  background-color: #ff0000;
+  color: #ffffff;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="Homepage CSS.css">
+</head>
+
+<div id="header">
+  <img src="logo dental.png" alt="Executive Dental Clinic logo">
+  <h1>Executive Dental Clinic</h1>
+</div>
+
+<div id="main-content">
+
+<button id="create-record-btn">Create Patient Record</button>
+<button id="manage-records-btn">Manage Patient Records</button>
+<button id="access-archive-btn">Access Archive</button>
+<button id="access-logs-btn">Access System Logs</button>
+
+<script>
+
+document.getElementById("create-record-btn").addEventListener("click", function(){
+  window.location.href = "createpx_01.html";
+});
+
+document.getElementById("manage-records-btn").addEventListener("click", function(){
+  window.location.href = "manage_records.html";
+});
+
+document.getElementById("access-archive-btn").addEventListener("click", function(){
+  window.location.href = "access_archive.html";
+});
+
+document.getElementById("access-logs-btn").addEventListener("click", function(){
+  window.location.href = "access_syslogs.html";
+});
+
+document.getElementById("log-out").addEventListener("click", function(){
+  window.location.href = "logout.html";
+});
+</script>
+
+</div>
+<div id="footer">
+  <button id="log-out">Log Out</button>
+</div>
+</html>
+
+
+

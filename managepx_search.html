@@ -1,0 +1,66 @@
+<div class="container">
+  <button class="back-button">Back</button>
+  <input type="text" class="search-bar" placeholder="Search Patient">
+  <div class="results-window">
+    <h2>Manage PX - Search</h2>
+    <p class="sample-result">Sample Result</p>
+  </div>
+</div>
+
+<style>
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.search-bar {
+  width: 50%;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.results-window {
+  width: 50%;
+  height: 200px;
+  background-color: #f0f0f0;
+  margin-top: 20px;
+  padding: 10px;
+  display: none;
+}
+
+.results-window h2 {
+  margin-bottom: 10px;
+}
+
+.sample-result {
+  font-weight: bold;
+}
+</style>
+
+<script>
+const backButton = document.querySelector('.back-button');
+const searchInput = document.querySelector('.search-bar');
+const resultsWindow = document.querySelector('.results-window');
+
+backButton.addEventListener('click', function() {
+  window.location.href = 'Homepage.html';
+});
+
+searchInput.addEventListener('input', function() {
+  if (searchInput.value.length > 0) {
+    resultsWindow.style.display = 'block';
+  } else {
+    resultsWindow.style.display = 'none';
+  }
+});
+</script>
